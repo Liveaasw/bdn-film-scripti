@@ -13,7 +13,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
     
     <?php foreach($sayfas as $sayfa) { ?>
     <url>
-        <loc><?php echo base_url().$sayfa->sayfa_url; ?></loc>
+        <loc><?php echo base_url("sayfa/").$sayfa->sayfa_url; ?></loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
@@ -22,7 +22,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
     
     <?php foreach($items as $item) { ?>
     <url>
-        <loc><?php echo base_url().$item->film_url; ?></loc>
+        <loc><?php echo base_url("film/").$item->film_url; ?></loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
@@ -30,7 +30,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
     
         <?php foreach($kategoris as $kategori) { ?>
     <url>
-        <loc><?php echo base_url().$kategori->kategori_url; ?></loc>
+        <loc><?php echo base_url("kategori/").$kategori->kategori_url; ?></loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
